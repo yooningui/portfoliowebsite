@@ -1,0 +1,33 @@
+---
+title: "Driver Drowsiness Detection System"
+summary: "A real-time AI-powered system that detects driver fatigue using deep learning and computer vision to enhance road safety."
+link: "https://www.youtube.com/watch?v=FjkNC11gxMc"
+publishedAt: "2024-12-01"
+---
+
+## Overview
+
+The Driver Drowsiness Detection System is a real-time application designed to monitor driver alertness and prevent accidents caused by fatigue. The project leverages **deep learning**, **computer vision**, and **transfer learning** to classify driver states as *drowsy* or *alert* based on facial cues.
+
+## Key Features
+
+- **Deep Learning Model**: Developed a classification model using **TensorFlow/Keras** with **MobileNetV2** as the base architecture for transfer learning, achieving high accuracy in detecting drowsiness.
+- **Data Preprocessing & Augmentation**: Processed the **MRL Eye Dataset (~84,000 images)** with Python for resizing, normalization, augmentation, and undersampling to balance class distributions and improve model generalization.
+- **Real-Time Detection**: Implemented **OpenCV** and **MediaPipe** for continuous tracking of eye and mouth regions, enabling dynamic monitoring of driver fatigue through live video feeds.
+- **Fatigue Scoring System**: Designed a real-time scoring mechanism that aggregates visual indicators (eye closure, yawning frequency) into a continuous fatigue index.
+
+## Technologies Used
+
+- **Python**: For model training, data preprocessing, and real-time implementation.
+- **TensorFlow / Keras**: For building and fine-tuning the deep learning model.
+- **MobileNetV2**: Lightweight transfer learning model enabling efficient real-time inference.
+- **OpenCV**: For live face and eye detection from camera feeds.
+- **MediaPipe**: For robust facial landmark detection and tracking.
+
+## Challenges and Learnings
+
+Key challenges included ensuring **real-time performance** while maintaining **model accuracy** and minimizing false positives. Optimizing the inference pipeline and integrating computer vision with deep learning provided valuable insights into balancing accuracy and speed for real-world applications.
+
+## Outcome
+
+The system successfully detects and classifies driver drowsiness in real time with high precision. It demonstrates the potential of combining **AI-based visual recognition** with **lightweight architectures** to build effective safety solutions for automotive and transportation domains.
